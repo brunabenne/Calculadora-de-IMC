@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>Calculadora de IMC</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" text="javascript"></script>
+
+<body>
+
+    <h1>Calculadora de IMC</h1>
+    <main>
+        <div id="left">
+            <form id="form">
+                <!-- <label for="idade">Idade</label><br>
+                <input onclick="limparInput(this)" type="text" id="idade" placeholder="Ex: 33" required><span>
+                anos</span> -->
+                <br>
+                <label for="altura">Altura</label><br>
+                <input onclick="limparInput(this)" type="text" id="altura" placeholder="Ex: 1.70" required><span>
+                m</span>
+                <br>
+                <label for="peso">Peso</label><br>
+                <input onclick="limparInput(this)" type="text" id="peso" placeholder="Ex: 80" required><span>kg</span>
+                <br>
+                <div id="erro"></div>
+                <button onclick="calcular()">CALCULAR</button>
+            </form>
+        </div>
+
+        <div id="meio" class="hidden">
+            <div id="middle">
+
+                <div class="conteudo" id="result">
+                    <div>Seu IMC é</div>
+                    <div id="result-imc">
+                        <span id="value"></span>
+                    </div>
+                </div>
+
+                <div class="conteudo" id="imagem">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div id="right">
+            <div class="conteudo" id="tabela">
+
+                <div class="linha" id="linha-titulo">
+                    <div class="numero" id="corner1">IMC</div>
+                    <div class="texto" id="corner2">Classificação</div>
+                </div>
+                <div class="linha" id="abaixo">
+                    <div class="numero">menor de 18,5</div>
+                    <div class="texto">Abaixo do peso</div>
+                </div>
+                <div class="linha" id="normal">
+                    <div class="numero">18,5 - 24,9</div>
+                    <div class="texto">Normal</div>
+                </div>
+                <div class="linha" id="sobrepeso">
+                    <div class="numero">25,0 - 29,9</div>
+                    <div class="texto">Excesso de peso</div>
+                </div>
+                <div class="linha" id="obeso1">
+                    <div class="numero">30,0 - 34,9</div>
+                    <div class="texto">Obesidade Leve (Grau I)</div>
+                </div>
+                <div class="linha" id="obeso2">
+                    <div class="numero">35,0 - 39,9 </div>
+                    <div class="texto">Obesidade Severa (Grau II)</div>
+                </div>
+                <div class="linha" id="obeso3">
+                    <div class="numero" id="corner3">maior de 40,0 </div>
+                    <div class="texto" id="corner4">Obesidade Mórbida (Grau III)</div>
+                </div>
+
+            </div>
+
+            <div id="resumo" class="hidden">
+                <div class="conteudo">
+                    <div id="title-imc"></div>
+                    <div id="mensagem-imc"></div>
+                </div>
+            </div>
+    
+            </div>
+
+        </div>
+
+
+      
+
+    </main>
+</body>
+
+</html>
